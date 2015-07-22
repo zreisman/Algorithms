@@ -9,9 +9,11 @@ def quicksort!(array)
   #Partition array
   (0...array.length - 1).each do |current|
     if array[current] < array[pivot]
+      
       temp = array[wall]
       array[wall] = array[current]
       array[current] = temp
+
       wall += 1
     end
   end
